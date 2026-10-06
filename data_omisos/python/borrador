@@ -1,0 +1,27 @@
+""" parques = {}
+
+    # Procesar parque por vigencia
+    # for vigencia in vigencias:
+        print(f'Procesando vigencia {vigencia}...')
+        parques[vigencia] = procesar_parque_automotor(vigencia, clases)
+
+    # Concatenar los parques por vigencia
+    parque_total = pd.concat(parques.values(), ignore_index=True)
+
+    # Reemplazar valores en el DataFrame
+    parque_total.loc[parque_total['ESTADO'] == 'PERSONA INDETERMINADA', 'DEPARTAMENTO'] = 'SIN DEPARTAMENTO'
+    parque_total.loc[parque_total['ESTADO'] == 'PERSONA INDETERMINADA', 'SUBREGION'] = 'SIN SUBREGION'
+    parque_total.loc[parque_total['ESTADO'] == 'PERSONA INDETERMINADA', 'MUNICIPIO'] = 'SIN MUNICIPIO'
+
+    # Obtener fecha actual para el nombre del archivo
+    fecha_actual = datetime.today().strftime('%Y%m%d')
+    parque_total_path = f'{output_omisos}/{fecha_actual}_parque_total.parquet'
+    
+    # Guardar DataFrame como archivo parquet
+    try:
+        parque_total.to_parquet(parque_total_path)
+        print(f'Archivo guardado como {parque_total_path}')
+    except Exception as e:
+        print(f"Error al guardar el archivo parquet: {e}")
+        return
+ """

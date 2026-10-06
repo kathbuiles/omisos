@@ -1,0 +1,4 @@
+output/*
+*cartera_fuente*
+cartera.parquet
+cartera_limpia.parquet
